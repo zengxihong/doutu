@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/search">
+    关键字：<input type="text" name="kw">
+    数量：<input type="text" name="count" values="100">
+    <input type="submit" value="查询">
+</form>
+
+{% for i in images %}
+<img src="{{ i.imageUrl }}" alt="{{ i.name }}">
+{% endfor %}
+
+
+</body>
+</html>
